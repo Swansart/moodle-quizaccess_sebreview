@@ -24,6 +24,8 @@ global $CFG;
 require_once(__DIR__ . '/helper_trait.php');
 require_once($CFG->dirroot . '/mod/quiz/accessrule/sebreview/lib.php');
 
+#[\PHPUnit\Framework\Attributes\CoversFunction('quizaccess_sebreview_override_webservice_execution')]
+#[\PHPUnit\Framework\Attributes\CoversClass(review_guard::class)]
 /**
  * Tests that the web service used by the Moodle app cannot be used to get around the restriction.
  *
@@ -33,8 +35,6 @@ require_once($CFG->dirroot . '/mod/quiz/accessrule/sebreview/lib.php');
  * @covers \quizaccess_sebreview\review_guard
  * @covers ::quizaccess_sebreview_override_webservice_execution
  */
-#[\PHPUnit\Framework\Attributes\CoversFunction('quizaccess_sebreview_override_webservice_execution')]
-#[\PHPUnit\Framework\Attributes\CoversClass(review_guard::class)]
 final class webservice_test extends \advanced_testcase {
     use helper_trait;
 

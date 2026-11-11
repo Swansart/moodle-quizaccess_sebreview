@@ -27,6 +27,7 @@ require_once($CFG->dirroot . '/mod/quiz/accessrule/sebreview/rule.php');
 require_once($CFG->dirroot . '/mod/quiz/mod_form.php');
 require_once($CFG->dirroot . '/course/lib.php');
 
+#[\PHPUnit\Framework\Attributes\CoversClass(\quizaccess_sebreview::class)]
 /**
  * Tests for the access rule class: settings, quiz form, deletion and duplication.
  *
@@ -35,7 +36,6 @@ require_once($CFG->dirroot . '/course/lib.php');
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @covers \quizaccess_sebreview
  */
-#[\PHPUnit\Framework\Attributes\CoversClass(\quizaccess_sebreview::class)]
 final class rule_test extends \advanced_testcase {
     use helper_trait;
 

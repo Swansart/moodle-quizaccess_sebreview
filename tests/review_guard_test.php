@@ -22,6 +22,7 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once(__DIR__ . '/helper_trait.php');
 
+#[\PHPUnit\Framework\Attributes\CoversClass(review_guard::class)]
 /**
  * Tests for the decision whether a user may review an attempt.
  *
@@ -30,7 +31,6 @@ require_once(__DIR__ . '/helper_trait.php');
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @covers \quizaccess_sebreview\review_guard
  */
-#[\PHPUnit\Framework\Attributes\CoversClass(review_guard::class)]
 final class review_guard_test extends \advanced_testcase {
     use helper_trait;
 
