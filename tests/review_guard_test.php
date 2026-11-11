@@ -28,6 +28,7 @@ require_once(__DIR__ . '/helper_trait.php');
  * @package    quizaccess_sebreview
  * @copyright  2026 Arthur Schwaninger
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers \quizaccess_sebreview\review_guard
  */
 #[\PHPUnit\Framework\Attributes\CoversClass(review_guard::class)]
 final class review_guard_test extends \advanced_testcase {

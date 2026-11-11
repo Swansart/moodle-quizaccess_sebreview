@@ -30,6 +30,8 @@ require_once($CFG->dirroot . '/mod/quiz/accessrule/sebreview/lib.php');
  * @package    quizaccess_sebreview
  * @copyright  2026 Arthur Schwaninger
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers \quizaccess_sebreview\review_guard
+ * @covers ::quizaccess_sebreview_override_webservice_execution
  */
 #[\PHPUnit\Framework\Attributes\CoversFunction('quizaccess_sebreview_override_webservice_execution')]
 #[\PHPUnit\Framework\Attributes\CoversClass(review_guard::class)]

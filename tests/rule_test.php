@@ -33,6 +33,7 @@ require_once($CFG->dirroot . '/course/lib.php');
  * @package    quizaccess_sebreview
  * @copyright  2026 Arthur Schwaninger
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @covers \quizaccess_sebreview
  */
 #[\PHPUnit\Framework\Attributes\CoversClass(\quizaccess_sebreview::class)]
 final class rule_test extends \advanced_testcase {
